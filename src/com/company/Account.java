@@ -20,5 +20,12 @@ class Account {
     public String getName(){
         return name;
     }
-    //No setter setName because is immutable
+    // No setter setName because is immutable.
+
+    public double getBalance(){
+        return balance;
+    }
+    // No setBalance cause it modifies with incoming and refunds.
+
+
 }
