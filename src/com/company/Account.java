@@ -16,4 +16,10 @@ class Account {
     private boolean canGet(double quantity){
         return quantity <= balance;
     }
+
+    public String getName(){
+        return name;
+    }
+    //No setter setName because is immutable
+    // Bla
 }
