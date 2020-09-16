@@ -21,5 +21,4 @@ class Account {
         return name;
     }
     //No setter setName because is immutable
-    // Bla
 }
