@@ -1,15 +1,19 @@
 package com.company;
 
-public class Account {
-    String name;
-    double balance;
+class Account {
+    private String name;
+    private double balance;
 
-    void incoming (double quantity){
+    public void incoming (double quantity){
         balance = balance + quantity;
     }
 
-    void  refund (double quantity){
+    public void  refund (double quantity){
         if (quantity <= balance)
             balance = balance - quantity;
+    }
+
+    private boolean canGet(double quantity){
+        return quantity <= balance;
     }
 }
